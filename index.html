@@ -710,6 +710,34 @@
     .header-contribute:hover .hc-arrow { transform: translateX(3px); }
 
     /* ══════════════════════════════════════════════════════════
+       CARD CONTRIBUTE PILL — compact CTA for pre-development
+       project cards (mirrors .header-contribute but solid-fill,
+       for use on the white project-card body background).
+    ══════════════════════════════════════════════════════════ */
+    .card-contribute-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      margin-top: 4px;
+    }
+    .card-contribute-pill:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .card-contribute-pill .hc-icon { font-size: 14px; line-height: 1; }
+    .card-contribute-pill .hc-text { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
+    .card-contribute-pill .hc-eyebrow { font-size: 9px; font-weight: 800; letter-spacing: 1px; opacity: 0.9; }
+    .card-contribute-pill .hc-label { font-size: 12px; font-weight: 700; }
+    .card-contribute-pill .hc-arrow { font-size: 13px; margin-left: 2px; transition: transform 0.18s ease; }
+    .card-contribute-pill:hover .hc-arrow { transform: translateX(3px); }
+
+    /* ══════════════════════════════════════════════════════════
        CONTRIBUTE TO THE HUB — call-to-action card
        Uses --hub-dark / --hub-mid from the parent site section,
        so it auto-adapts for Foxtail (green) and Bluestem (blue).
@@ -850,7 +878,7 @@
       <div class="tagline">At-a-glance status across all active developments</div>
     </div>
     <div class="ov-header-meta">
-      <div class="date">July 23, 2026 · Daily rollup</div>
+      <div class="date">July 24, 2026 · Daily rollup</div>
       5 Projects in Hub &nbsp;·&nbsp; 5 Active<br/>
       13 Open Items Across Portfolio
     </div>
@@ -901,7 +929,7 @@
           <div class="proj-title-group">
             <div class="proj-name">🌿 Foxtail Commons</div>
             <div class="proj-location">Okatie, South Carolina</div>
-            <div class="proj-phase">Current Phase: Site Infrastructure · Paving + Striping Underway · Forming Home Pads · 18-Slab Pour Wave July 1</div>
+            <div class="proj-phase">Current Phase: Site Infrastructure · Home &amp; Clubhouse Framing Underway · Slab Pours Continuing on Pickerel Loop</div>
           </div>
           <span class="status-pill on-track">On Track</span>
         </div>
@@ -955,7 +983,7 @@
           <div class="proj-title-group">
             <div class="proj-name">🌾 Bluestem at Stagecoach</div>
             <div class="proj-location">Kansas City, Missouri</div>
-            <div class="proj-phase">Current Phase: Mass Grading · New Sanitary Line 12 &amp; Storm Line 24 · AT&amp;T Line Slipped Twice · 38 Weather Days</div>
+            <div class="proj-phase">Current Phase: Mass Grading · Sanitary Lines 12, 13, 15 &amp; 18 Complete · AT&amp;T Line Slipped Twice · 39 Weather Days</div>
           </div>
           <span class="status-pill watch">Weather Delays</span>
         </div>
@@ -996,6 +1024,7 @@
               <li>Neighbors is recirculating the new plans to their subs and suppliers on Monday, May 18th. We are expecting final pricing, and executed contract within 30&ndash;45 days.</li>
               <li>Jul 9 site report: Private SS Lines 13 &amp; 3 (structures 3-1→3-2) complete on north side of NW 90th St; KC Water contract docs submitted to Kirk Rome 7/8; AT&amp;T north-approach telecom line reopened (previously reported resolved) — now scheduled to be lowered week of Jul 13; new preliminary sanitary plans received with changes to already-installed services.</li>
               <li>Jul 16 site report (prepared by Trevor Zarybnicky, Superior Bowen): Private SS Line 3 extended (3-3→4-1) complete; new Private SS Line 12 (10-2→12-1) complete, all services run; Private Storm Sewer Line 24 installed; 1 more weather day lost (38 cumulative); AT&amp;T north-approach line slipped again, now targeted week of Jul 20; NW 90th roadway/curb status unmentioned for a second straight week.</li>
+              <li>Jul 23 site report (Dan Evans): Private SS Lines 12, 13, 15 &amp; 18 all complete, all services run; Private SS Line 14 (structures 14-1→14-4) complete; missing private storm structures for Lines 24→29 have arrived; rip-rap placed at detention basin outfall structures; erosion control BMPs repaired; 1 more weather day lost (39 cumulative); NW 90th roadway/curb status unmentioned for a third straight week.</li>
             </ul>
           </div>
 
@@ -1059,6 +1088,15 @@
             </ul>
           </div>
 
+          <a href="https://sweetwatermgmt-my.sharepoint.com/:w:/g/personal/preston_nextchapterneighborhoods_com/IQDf0pU9YKaLRLD1iGceFUfjAf6sXsqbYKWluSbY20lMC4Q?e=zp9JTE&web=1" target="_blank" class="card-contribute-pill" style="background:#a84545;">
+            <span class="hc-icon">📝</span>
+            <span class="hc-text">
+              <span class="hc-eyebrow">CONTRIBUTE</span>
+              <span class="hc-label">Contribute to the Hub</span>
+            </span>
+            <span class="hc-arrow">→</span>
+          </a>
+
         </div>
         <div class="project-card-footer">
           <div class="footer-meta">Pre-construction · 274 units · Closing Aug 10, 2026</div>
@@ -1114,6 +1152,15 @@
             </ul>
           </div>
 
+          <a href="https://sweetwatermgmt-my.sharepoint.com/:w:/g/personal/preston_nextchapterneighborhoods_com/IQBJb9fFb1WbSZHwr36bqTKlAR7ecJEqgq87Pj8f6Hc-_gg?e=3xi0Bf&web=1" target="_blank" class="card-contribute-pill" style="background:#3b8585;">
+            <span class="hc-icon">📝</span>
+            <span class="hc-text">
+              <span class="hc-eyebrow">CONTRIBUTE</span>
+              <span class="hc-label">Contribute to the Hub</span>
+            </span>
+            <span class="hc-arrow">→</span>
+          </a>
+
         </div>
         <div class="project-card-footer">
           <div class="footer-meta">Pre-construction · 277 units · Closing Nov 27, 2026</div>
@@ -1148,6 +1195,15 @@
           <!-- OPERATIONS — all fields blank in notepad → entire section omitted -->
 
           <!-- STATUS UPDATES — notepad has no updates → section omitted -->
+
+          <a href="#" target="_blank" class="card-contribute-pill" style="background:#b87316;">
+            <span class="hc-icon">📝</span>
+            <span class="hc-text">
+              <span class="hc-eyebrow">CONTRIBUTE</span>
+              <span class="hc-label">Contribute to the Hub</span>
+            </span>
+            <span class="hc-arrow">→</span>
+          </a>
 
         </div>
         <div class="project-card-footer">
@@ -1261,7 +1317,7 @@
   </div><!-- /ov-main -->
 
   <div class="ov-footer">
-    Next Chapter Neighborhoods · The Hub · Updated July 23, 2026 · Daily rollup · Site hubs refresh daily at 7 AM
+    Next Chapter Neighborhoods · The Hub · Updated July 24, 2026 · Daily rollup · Site hubs refresh daily at 7 AM
   </div>
 
 </div><!-- /#overview -->
@@ -1318,7 +1374,7 @@
     <div class="lbl">Paving Complete</div>
   </div>
   <div class="hub-stat">
-    <div class="val">6</div>
+    <div class="val">4</div>
     <div class="lbl">Active Contractors</div>
   </div>
   <div class="hub-stat">
@@ -1326,7 +1382,7 @@
     <div class="lbl">Open Issues</div>
   </div>
   <div class="hub-stat">
-    <div class="val">July 22</div>
+    <div class="val">July 23</div>
     <div class="lbl">Last Site Report</div>
   </div>
   </div>
@@ -1413,8 +1469,8 @@
           <div class="hub-phase-item">
             <div>
               <div class="phase-name">Home Slab Foundations</div>
-              <div class="phase-detail">Apr 28: Whittaker testing compaction on some house pads. Apr 29: Preston marking house pads on Sharpnose &amp; Pickerel Loop. May 5: Whittaker passing compaction results received for Houses 3, 9 &amp; 13 on Leatherback plus the temporary metal building pad — pads ready for slab work; Andrew now scheduling plumbing rough-in. <strong>May 13: Joey from Low Country Concrete on site — slab schedule discussion confirms Low Country will form Leatherback 3, 9 &amp; 13 plus the metal building pad starting Tue May 19.</strong> <strong>May 19 tomorrow plan: Low Country Concrete on site Wed May 20 through Fri May 22 forming slabs for the temporary metal building and houses 3, 9 &amp; 13 on Leatherback. Whittaker on site Thursday May 21 conducting compaction testing on the pads on Sharpnose &amp; Pickerel.</strong> <strong>May 20: Low Country Concrete (8 workers, 1 mini-x, 1 skidsteer) on site forming houses 3, 9 &amp; 13 Leatherback. Mark calling in slab foundation inspections and organizing the inground plumbing next.</strong> <strong>May 21: Whittaker conducted compaction tests on all of Sharpnose, Pickerel and Leatherback — pads cleared. Low Country Concrete manager visited; slab prep across the program continues.</strong> <strong>May 27: Temporary metal building at the back of the site has been formed. Mark has scheduled the slab crew to come out and form 10 more pads (4 down Sharpnose, 6 on the left end of Leatherback) — awaiting their schedule confirmation. Compaction tests lined up for Redhorse and Red Wolf for May 28 afternoon. 12 loads of fill incoming May 28 for house pads 3, 9 and 13 Leatherback.</strong> <strong>May 28: 12 loads of fill delivered to site this morning for the Leatherback 3/9/13 pads. Whittaker compaction tests on Redhorse and Red Wolf PASSED — pads cleared. Joey from Low Country Concrete on site planning the amenity pour for Fri May 29 (pump truck arrives 5 AM; all three amenity pads to pour tomorrow if weather cooperates).</strong> First slab pour still not confirmed. <strong>Jun 3: Jenkins Plumbing to install in-ground plumbing to the 4 pads on Sharpnose tomorrow (Jun 4).</strong> <strong>Jun 4: Jenkins Plumbing (2 workers, mini-x) on site installing in-ground plumbing to the 4 pads on Sharpnose — as planned. In-ground plumbing inspection scheduled for tomorrow (Jun 5). Compaction tests on Foxtail Blvd also scheduled Jun 5.</strong> <strong>Jun 5: Jenkins (3 workers, mini-x, water truck) completed in-ground plumbing on all 4 Sharpnose pads. In-ground plumbing inspection: 2 pads PASSED, 2 pads still being worked on — inspection for remaining 2 scheduled for Monday Jun 8. Low Country Concrete contacted about forming the 6 pads on Pickerel Loop starting Monday.</strong> <strong>Jun 8 update: Home slab pours are scheduled to begin July 1, 2026 — 18 slabs in the first pour wave. The pour start was pushed by the asphalt paving sequence (subgrade, base course, and surface course had to precede slab work on many pads). NCN and subs are working overtime to form as many pads as possible ahead of the July 1 target to maximize the first pour wave and make up time lost to paving.</strong> <strong>Jun 1: Low Country Concrete (8 workers, skidsteer, mini X) forming the 4 house pads on Sharpnose Loop and moving fill material into the 3 formed pads on Leatherback.</strong> <strong>Jun 2: Low Country Concrete formed all pads on Sharpnose. Jenkins Plumbing scheduled to install in-ground plumbing to the 4 Sharpnose pads on Thursday Jun 4.</strong> <strong>Jun 8: Low Country Concrete (5 workers) forming pads on Pickerel Loop. In-ground plumbing inspection PASSED — all 4 Sharpnose pads ready for slab prep.</strong> <strong>Jun 9: Low Country Concrete (3 workers) forming the final two house pads on Pickerel Loop; correcting a layout issue at 12 Sharpnose; backfilling the underground plumbing installations along Sharpnose. Bunn continuing to place stone. Waiting on Jenkins (the Jenkins plumbing co.) for underground plumbing installation to the pads on Pickerel Loop.</strong> <strong>Jun 10: Low Country Concrete (2 workers) covering up in-ground plumbing and correcting a mistake at 12 Sharpnose; once complete will move to Leatherback and continue forming. Got in touch with Jenkins — waiting on their response as to when they can install underground plumbing to the Pickerel Loop pads.</strong> <strong>Jun 11: Jenkins Plumbing will be on site tomorrow (Jun 12) to install in-ground plumbing to the pads on Pickerel Loop — Jenkins confirmed. Pump station materials delivered to site; core drill arrived.</strong> <strong>Jun 12: Jenkins Plumbing (6 workers, 2 crews) on site installing underground plumbing to Pickerel Loop pads — expected to complete today. Plumbing inspections scheduled for Monday Jun 15.</strong> <strong>Jun 13 (Saturday): Jenkins Plumbing (1 worker) on site capping and filling the waterline in preparation for Monday Jun 15 inspection. Pickerel Loop underground plumbing installation COMPLETE.</strong> <strong>Jun 15: ALL in-ground plumbing inspections PASSED on Pickerel Loop — Jenkins Plumbing (1 worker, water truck) installed remaining sleeves and completed water testing by filling the systems with water. All Pickerel Loop pads now cleared for slab prep ahead of the July 1 pour wave. Deadbolts and fire extinguishers scheduled for delivery Jun 16.</strong> <strong>Jun 23: Deadbolts and fire extinguishers delivered (Lowes delivery).</strong> <strong>Jun 24: Ordered form and slab prep materials for the next batch of homes. Concrete washout materials also ordered. Dominion worker on site flagging the trench path for power.</strong> <strong>Jun 25: Slab preparation materials, formwork, and flagpole delivered to site.</strong> <strong>Jul 1: Low Country Concrete scheduled to have 3 crews on site Monday Jul 6 — 2 crews performing slab prep on Sharpnose and Pickerel Loop, 1 crew forming. Pours tentatively scheduled Thursday and Friday (Jul 9–10) if weather permits.</strong> <strong>Jul 2: Schedule refined — Low Country Concrete confirmed for two crews on site Monday Jul 6 for slab prep on Sharpnose Loop and Pickerel Loop. Concrete pours now scheduled for Thursday Jul 9 (4 slabs, Sharpnose Loop) and Friday Jul 10 (3 slabs, Pickerel Loop), weather permitting — supersedes the earlier July 1 pour-wave target, which slipped due to the paving sequence running through Jul 2.</strong> <strong>Jul 6: Low Country Concrete (5 workers) on site fixing a forming mistake on Leatherback, then moving to slab prep on the Sharpnose house pads. Jenkins Plumbing (3 workers, mini-x) installing in-ground plumbing to houses 3, 9 &amp; 13 Leatherback; in-ground plumbing inspections scheduled for tomorrow (Jul 7) — Jenkins will then move down Leatherback to continue in-ground plumbing.</strong> <strong>Jul 17: Low Country Concrete (10 workers) poured 2 Cypress-plan homes plus the walkway; crew back on site tomorrow to continue Pickerel Loop slab prep, with inspections scheduled Monday for 23, 27, 29 &amp; 31 Pickerel.</strong> <strong>Jul 20: Low Country Concrete (7 workers) performing slab prep on Pickerel Loop homes, with plans to pour 3 additional pads (19, 23 &amp; 27) tomorrow weather permitting. Jenkins Plumbing (3 workers) installing underground plumbing for 4 Maple-plan homes on Leatherback, inspections scheduled tomorrow.</strong> <strong>Jul 21: Low Country Concrete (7 workers) POURED slabs at 19 &amp; 23 Pickerel; continuing slab prep with 27, 29 &amp; 31 Pickerel targeted for Thursday and 3, 9 &amp; 13 targeted for Friday, weather permitting. Jenkins Plumbing (3 workers) — all 4 Maple-home in-ground plumbing inspections on Leatherback PASSED today. 2 slab prep + 4 in-ground plumbing inspections passed overall.</strong> <strong>Jul 22: Low Country Concrete (4 workers) continuing slab prep on Leatherback; plan reconfirmed unchanged — 27, 29 &amp; 31 Pickerel targeted to pour Wednesday Jul 23, and 3, 9 &amp; 13 targeted for Friday Jul 24, weather permitting. Jenkins Plumbing (3 workers) repaired an in-ground plumbing line on Leatherback that was damaged by the slab prep crew.</strong></div>
-              <div class="hub-progress-wrap"><div class="hub-progress-fill yellow" style="width:70%"></div></div>
+              <div class="phase-detail">Apr 28: Whittaker testing compaction on some house pads. Apr 29: Preston marking house pads on Sharpnose &amp; Pickerel Loop. May 5: Whittaker passing compaction results received for Houses 3, 9 &amp; 13 on Leatherback plus the temporary metal building pad — pads ready for slab work; Andrew now scheduling plumbing rough-in. <strong>May 13: Joey from Low Country Concrete on site — slab schedule discussion confirms Low Country will form Leatherback 3, 9 &amp; 13 plus the metal building pad starting Tue May 19.</strong> <strong>May 19 tomorrow plan: Low Country Concrete on site Wed May 20 through Fri May 22 forming slabs for the temporary metal building and houses 3, 9 &amp; 13 on Leatherback. Whittaker on site Thursday May 21 conducting compaction testing on the pads on Sharpnose &amp; Pickerel.</strong> <strong>May 20: Low Country Concrete (8 workers, 1 mini-x, 1 skidsteer) on site forming houses 3, 9 &amp; 13 Leatherback. Mark calling in slab foundation inspections and organizing the inground plumbing next.</strong> <strong>May 21: Whittaker conducted compaction tests on all of Sharpnose, Pickerel and Leatherback — pads cleared. Low Country Concrete manager visited; slab prep across the program continues.</strong> <strong>May 27: Temporary metal building at the back of the site has been formed. Mark has scheduled the slab crew to come out and form 10 more pads (4 down Sharpnose, 6 on the left end of Leatherback) — awaiting their schedule confirmation. Compaction tests lined up for Redhorse and Red Wolf for May 28 afternoon. 12 loads of fill incoming May 28 for house pads 3, 9 and 13 Leatherback.</strong> <strong>May 28: 12 loads of fill delivered to site this morning for the Leatherback 3/9/13 pads. Whittaker compaction tests on Redhorse and Red Wolf PASSED — pads cleared. Joey from Low Country Concrete on site planning the amenity pour for Fri May 29 (pump truck arrives 5 AM; all three amenity pads to pour tomorrow if weather cooperates).</strong> First slab pour still not confirmed. <strong>Jun 3: Jenkins Plumbing to install in-ground plumbing to the 4 pads on Sharpnose tomorrow (Jun 4).</strong> <strong>Jun 4: Jenkins Plumbing (2 workers, mini-x) on site installing in-ground plumbing to the 4 pads on Sharpnose — as planned. In-ground plumbing inspection scheduled for tomorrow (Jun 5). Compaction tests on Foxtail Blvd also scheduled Jun 5.</strong> <strong>Jun 5: Jenkins (3 workers, mini-x, water truck) completed in-ground plumbing on all 4 Sharpnose pads. In-ground plumbing inspection: 2 pads PASSED, 2 pads still being worked on — inspection for remaining 2 scheduled for Monday Jun 8. Low Country Concrete contacted about forming the 6 pads on Pickerel Loop starting Monday.</strong> <strong>Jun 8 update: Home slab pours are scheduled to begin July 1, 2026 — 18 slabs in the first pour wave. The pour start was pushed by the asphalt paving sequence (subgrade, base course, and surface course had to precede slab work on many pads). NCN and subs are working overtime to form as many pads as possible ahead of the July 1 target to maximize the first pour wave and make up time lost to paving.</strong> <strong>Jun 1: Low Country Concrete (8 workers, skidsteer, mini X) forming the 4 house pads on Sharpnose Loop and moving fill material into the 3 formed pads on Leatherback.</strong> <strong>Jun 2: Low Country Concrete formed all pads on Sharpnose. Jenkins Plumbing scheduled to install in-ground plumbing to the 4 Sharpnose pads on Thursday Jun 4.</strong> <strong>Jun 8: Low Country Concrete (5 workers) forming pads on Pickerel Loop. In-ground plumbing inspection PASSED — all 4 Sharpnose pads ready for slab prep.</strong> <strong>Jun 9: Low Country Concrete (3 workers) forming the final two house pads on Pickerel Loop; correcting a layout issue at 12 Sharpnose; backfilling the underground plumbing installations along Sharpnose. Bunn continuing to place stone. Waiting on Jenkins (the Jenkins plumbing co.) for underground plumbing installation to the pads on Pickerel Loop.</strong> <strong>Jun 10: Low Country Concrete (2 workers) covering up in-ground plumbing and correcting a mistake at 12 Sharpnose; once complete will move to Leatherback and continue forming. Got in touch with Jenkins — waiting on their response as to when they can install underground plumbing to the Pickerel Loop pads.</strong> <strong>Jun 11: Jenkins Plumbing will be on site tomorrow (Jun 12) to install in-ground plumbing to the pads on Pickerel Loop — Jenkins confirmed. Pump station materials delivered to site; core drill arrived.</strong> <strong>Jun 12: Jenkins Plumbing (6 workers, 2 crews) on site installing underground plumbing to Pickerel Loop pads — expected to complete today. Plumbing inspections scheduled for Monday Jun 15.</strong> <strong>Jun 13 (Saturday): Jenkins Plumbing (1 worker) on site capping and filling the waterline in preparation for Monday Jun 15 inspection. Pickerel Loop underground plumbing installation COMPLETE.</strong> <strong>Jun 15: ALL in-ground plumbing inspections PASSED on Pickerel Loop — Jenkins Plumbing (1 worker, water truck) installed remaining sleeves and completed water testing by filling the systems with water. All Pickerel Loop pads now cleared for slab prep ahead of the July 1 pour wave. Deadbolts and fire extinguishers scheduled for delivery Jun 16.</strong> <strong>Jun 23: Deadbolts and fire extinguishers delivered (Lowes delivery).</strong> <strong>Jun 24: Ordered form and slab prep materials for the next batch of homes. Concrete washout materials also ordered. Dominion worker on site flagging the trench path for power.</strong> <strong>Jun 25: Slab preparation materials, formwork, and flagpole delivered to site.</strong> <strong>Jul 1: Low Country Concrete scheduled to have 3 crews on site Monday Jul 6 — 2 crews performing slab prep on Sharpnose and Pickerel Loop, 1 crew forming. Pours tentatively scheduled Thursday and Friday (Jul 9–10) if weather permits.</strong> <strong>Jul 2: Schedule refined — Low Country Concrete confirmed for two crews on site Monday Jul 6 for slab prep on Sharpnose Loop and Pickerel Loop. Concrete pours now scheduled for Thursday Jul 9 (4 slabs, Sharpnose Loop) and Friday Jul 10 (3 slabs, Pickerel Loop), weather permitting — supersedes the earlier July 1 pour-wave target, which slipped due to the paving sequence running through Jul 2.</strong> <strong>Jul 6: Low Country Concrete (5 workers) on site fixing a forming mistake on Leatherback, then moving to slab prep on the Sharpnose house pads. Jenkins Plumbing (3 workers, mini-x) installing in-ground plumbing to houses 3, 9 &amp; 13 Leatherback; in-ground plumbing inspections scheduled for tomorrow (Jul 7) — Jenkins will then move down Leatherback to continue in-ground plumbing.</strong> <strong>Jul 17: Low Country Concrete (10 workers) poured 2 Cypress-plan homes plus the walkway; crew back on site tomorrow to continue Pickerel Loop slab prep, with inspections scheduled Monday for 23, 27, 29 &amp; 31 Pickerel.</strong> <strong>Jul 20: Low Country Concrete (7 workers) performing slab prep on Pickerel Loop homes, with plans to pour 3 additional pads (19, 23 &amp; 27) tomorrow weather permitting. Jenkins Plumbing (3 workers) installing underground plumbing for 4 Maple-plan homes on Leatherback, inspections scheduled tomorrow.</strong> <strong>Jul 21: Low Country Concrete (7 workers) POURED slabs at 19 &amp; 23 Pickerel; continuing slab prep with 27, 29 &amp; 31 Pickerel targeted for Thursday and 3, 9 &amp; 13 targeted for Friday, weather permitting. Jenkins Plumbing (3 workers) — all 4 Maple-home in-ground plumbing inspections on Leatherback PASSED today. 2 slab prep + 4 in-ground plumbing inspections passed overall.</strong> <strong>Jul 22: Low Country Concrete (4 workers) continuing slab prep on Leatherback; plan reconfirmed unchanged — 27, 29 &amp; 31 Pickerel targeted to pour Wednesday Jul 23, and 3, 9 &amp; 13 targeted for Friday Jul 24, weather permitting. Jenkins Plumbing (3 workers) repaired an in-ground plumbing line on Leatherback that was damaged by the slab prep crew.</strong> <strong>Jul 23: Low Country Concrete (4 workers) poured 2 more slabs on Pickerel Loop (exact addresses not specified in the log); 2 additional pours planned for tomorrow, Jul 24.</strong></div>
+              <div class="hub-progress-wrap"><div class="hub-progress-fill yellow" style="width:73%"></div></div>
             </div>
             <span class="hub-badge yellow">In Progress</span>
           </div>
@@ -1431,8 +1487,8 @@
           <div class="hub-phase-item">
             <div>
               <div class="phase-name">Home &amp; Clubhouse Framing</div>
-              <div class="phase-detail">Scope was already underway by mid-July (exact start date still not confirmed — 07.07–07.13 logs remain unread). <strong>Jul 15: Framing crew (14 workers, Lull) progressing on the clubhouse; leasing &amp; maintenance offices nearing completion of framing, with nail pattern inspection scheduled for Thursday Jul 16.</strong> <strong>Jul 16: Framing crew (14 workers) continuing on the clubhouse — leasing &amp; maintenance offices PASSED their nail pattern inspections.</strong> <strong>Jul 17: Framing crew (14 workers, Lull) progressing on the clubhouse — crane on site hanging trusses — and now framing houses on Sharpnose Loop. Truss packages arrived for 12 &amp; 16 Sharpnose.</strong> <strong>Jul 20: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop, having worked through the weekend (Sat &amp; Sun). Trusses for 22 Sharpnose arrived.</strong> <strong>Jul 21: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop.</strong> <strong>Jul 22: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop; a crew has started framing 22 Sharpnose. Nail pattern inspection scheduled tomorrow on 16 Sharpnose.</strong></div>
-              <div class="hub-progress-wrap"><div class="hub-progress-fill yellow" style="width:18%"></div></div>
+              <div class="phase-detail">Scope was already underway by mid-July (exact start date still not confirmed — 07.07–07.13 logs remain unread). <strong>Jul 15: Framing crew (14 workers, Lull) progressing on the clubhouse; leasing &amp; maintenance offices nearing completion of framing, with nail pattern inspection scheduled for Thursday Jul 16.</strong> <strong>Jul 16: Framing crew (14 workers) continuing on the clubhouse — leasing &amp; maintenance offices PASSED their nail pattern inspections.</strong> <strong>Jul 17: Framing crew (14 workers, Lull) progressing on the clubhouse — crane on site hanging trusses — and now framing houses on Sharpnose Loop. Truss packages arrived for 12 &amp; 16 Sharpnose.</strong> <strong>Jul 20: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop, having worked through the weekend (Sat &amp; Sun). Trusses for 22 Sharpnose arrived.</strong> <strong>Jul 21: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop.</strong> <strong>Jul 22: Framing crew (14 workers) continuing at the clubhouse &amp; 16 Sharpnose Loop; a crew has started framing 22 Sharpnose. Nail pattern inspection scheduled tomorrow on 16 Sharpnose.</strong> <strong>Jul 23: Framing crew (14 workers, Lull) continuing at the clubhouse, 16, 22 &amp; 12 Sharpnose Loop — crew now also framing 12 Sharpnose Loop. 16 Sharpnose Loop nail pattern inspection PASSED. Framing materials delivered for the clubhouse.</strong></div>
+              <div class="hub-progress-wrap"><div class="hub-progress-fill yellow" style="width:20%"></div></div>
             </div>
             <span class="hub-badge yellow">In Progress</span>
           </div>
@@ -1440,7 +1496,7 @@
           <div class="hub-phase-item">
             <div>
               <div class="phase-name">Temporary Metal Building — Construction</div>
-              <div class="phase-detail">Slab for the temp metal building was formed back on May 27 (see Home Slab Foundations history). <strong>Jul 20: A dedicated crew (5 workers) mobilized to begin construction/erection of the temporary metal building at the rear of the site.</strong> <strong>Jul 21: Crew continuing erection — log notes the building has been "moved to the back of the site."</strong> <strong>Jul 22: Dedicated crew (4 workers) continuing construction of the temporary metal building at the rear of the site.</strong></div>
+              <div class="phase-detail">Slab for the temp metal building was formed back on May 27 (see Home Slab Foundations history). <strong>Jul 20: A dedicated crew (5 workers) mobilized to begin construction/erection of the temporary metal building at the rear of the site.</strong> <strong>Jul 21: Crew continuing erection — log notes the building has been "moved to the back of the site."</strong> <strong>Jul 22: Dedicated crew (4 workers) continuing construction of the temporary metal building at the rear of the site.</strong> <strong>Jul 23: Workforce table lists 0 workers for the temp metal building crew today — no confirmed erection work; the narrative section separately states a crew mobilized to begin construction, which appears to be a carried-over description from Jul 20 rather than new activity. A scissor lift was delivered to site for the crew's continued use.</strong></div>
               <div class="hub-progress-wrap"><div class="hub-progress-fill blue" style="width:15%"></div></div>
             </div>
             <span class="hub-badge blue">Started</span>
@@ -2022,9 +2078,19 @@
             <div class="ms-date">July 21, 2026</div>
             <div class="ms-note">Low Country Concrete poured slabs at 19 &amp; 23 Pickerel. Remaining pads (27, 29, 31 Pickerel) targeted for Thursday Jul 23; 3, 9 &amp; 13 targeted for Friday Jul 24, weather permitting.</div>
           </div>
+          <div class="hub-milestone done">
+            <div class="ms-label">16 Sharpnose Loop Passes Nail Pattern Inspection</div>
+            <div class="ms-date">July 23, 2026</div>
+            <div class="ms-note">Framing crew's nail pattern inspection passed for 16 Sharpnose Loop per the Jul 23 daily log — clears the framing QA gate for that house. Crew also actively framing the clubhouse, 22 &amp; 12 Sharpnose Loop.</div>
+          </div>
+          <div class="hub-milestone done">
+            <div class="ms-label">Pickerel Loop Slab Pours Continue — 2 More Poured</div>
+            <div class="ms-date">July 23, 2026</div>
+            <div class="ms-note">Low Country Concrete (4 workers) poured 2 additional slabs on Pickerel Loop (exact addresses not specified in the log); 2 more pours planned for tomorrow, Jul 24.</div>
+          </div>
         </div>
       </div>
-      <div class="hub-last-updated last-updated">Based on Daily Logs Apr 14–17, Apr 20–24, Apr 28–30, May 1, May 4–8, May 11–13, May 18–22, May 26–30, Jun 1–5, Jun 8–13, Jun 15–19, Jun 22–27, 2026 &amp; Weekly Summaries Apr 6–10 and Apr 13–17, 2026 · Prepared by Mark Armstrong · Augmented May 18, 2026 (mini excavator purchase closed) · Daily rollup May 29, 2026 · Daily rollup Jun 3, 2026 (May 29 + May 30 logs ingested) · Daily rollup Jun 4, 2026 (Jun 3 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Daily rollup Jun 5, 2026 (Jun 4 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Daily rollup Jun 8, 2026 (Jun 5 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Jun 8, 2026: Home slab schedule updated — 18-slab pour wave target July 1, 2026; paving caused delay; overtime forming underway · Daily rollup Jun 9, 2026 (Jun 1 + Jun 2 + Jun 8 logs ingested; all manholes complete Jun 2; all storm pipe cleaned ~Jun 7; all 4 Sharpnose pads plumbing passed Jun 8; LCC forming Pickerel Loop pads) · Daily rollup Jun 11, 2026 (Jun 9 + Jun 10 logs ingested; paving contractor mobilizing Thu Jun 12–Fri Jun 13, asphalt ops start Mon Jun 15; fine grading complete on Right Whale, crew on Sturgeon; LCC forming final 2 Pickerel pads + correcting 12 Sharpnose; Precision removing excess storm drain structures; waiting on Jenkins for Pickerel in-ground plumbing schedule) · Daily rollup Jun 12, 2026 (Jun 11 log ingested; fine grading complete on Sturgeon, crew moving to Pompano then Foxtail; Jenkins confirmed for Jun 12 Pickerel Loop plumbing; Precision cleaning pump station + 3 manholes; Webb's Landscaping awaiting bill payment before power conduit trenching can start; pump station materials delivered; paving contractor still mobilizing today/tomorrow for Mon Jun 15 asphalt start) · Daily rollup Jun 15, 2026 (Jun 12 + Jun 13 logs ingested; Jenkins completed Pickerel Loop underground plumbing Jun 12 — inspection Mon Jun 15; fine grading crew completed pump station parking lot, moving down Foxtail; paving contractor finished equipment mobilization Jun 12–13; Bunn hauling stone to Sharpnose/Pickerel + for Okatie Hwy turning lane; Precision cleaning pump station + manholes Jun 12, rained out Jun 13; asphalt paving begins today Mon Jun 15) · Daily rollup Jun 16, 2026 (Jun 15 log ingested; asphalt paving COMMENCED — AD Williams (10 workers) began paving pump station parking lot and traffic circle; Pickerel Loop plumbing inspections ALL PASSED — all pads cleared for July 1 pour wave; fine grading crew progressing down Foxtail; Jenkins installed remaining sleeves + water testing complete; Bunn (2 workers) site support; stone subgrade prep phase marked Complete) · Daily rollup Jun 18, 2026 (Jun 16 + Jun 17 logs ingested; pump station parking lot asphalt complete Jun 16 — Precision (6 workers) resumed pump station work; AD Williams advancing down Right Whale + Sturgeon rear lot; fine grading complete on Red Wolf, crew on Redhorse toward Leatherback; Jun 17: asphalt placed down Right Whale + Sturgeon end lot, rained out 16:30 at 0.5") · Daily rollup Jun 19, 2026 (Jun 18 log ingested; asphalt placed down Right Whale, crew working down Sturgeon toward Right Whale intersection; fine grading complete on Leatherback, crew on Pickerel Loop; traffic circle + Foxtail/amenities fine grading deferred to final asphalt stages; Precision pumping pump station for sealing + epoxy paint; striping begins Mon Jun 22) · Daily rollup Jun 22, 2026 (Jun 19 log ingested — rain day; 2.25" fell Thu eve Jun 18 from 17:00–20:00; all paving + fine grading ops on hold Fri Jun 19; Bunn 1 worker pumping water from roads; paving + striping resume Mon Jun 22) · Daily rollup Jun 26, 2026 (Jun 22–25 logs ingested; Jun 22: 1.25" overnight rain, AD Williams not on site, Bunn installed drainage pipe on Pickerel Loop; Jun 23: AD Williams resumed on Sturgeon, Lowes delivery; Jun 24: Sturgeon + Right Whale paved, striping COMMENCED, Dominion on site flagging power trench, form/slab prep + concrete washout ordered; Jun 25: Pompano Way storm drainage COMPLETE (Bunn), slab prep materials + formwork + flagpole delivered, paving Pompano Way + Foxtail Drive; fine grading crew on Pickerel Loop + Sharpnose Loop + adjacent Foxtail Drive; Precision continuing pump station leak repairs + dewatering) · Daily rollup Jun 29, 2026 (Jun 26 + Jun 27 logs ingested; Jun 26: fine grading touch-up on Pickerel/Sharpnose nearing completion, AD Williams paving Redhorse — all asphalt anticipated complete Wed/Thu Jul 1–2, striping crew on site, turn lane on Okatie staked out, Bunn site support; Jun 27 (Saturday): Bunn marking Pickerel/Sharpnose for Monday asphalt, striping crew continuing, NC equipment moved to farthest lot) · Daily rollup Jun 30, 2026 (Jun 29 log ingested; AD Williams (10) paving Redhorse Court + Leatherback Lane — all asphalt anticipated complete Jul 1–2; fine grading COMPLETE; Bunn (3) cleaning Sharpnose Loop drainage ditch + turn lane pre-construction meeting done, construction starts Jul 6; Precision (8) completed manholes 39–41 cleaning, epoxy coating underway) · Daily rollup Jul 1, 2026 (Jun 30 log ingested; base course asphalt paving 100% COMPLETE — all remaining asphalt finished; turn lane start updated to Jul 7 nighttime 19:00–7:00; Precision epoxy coating manholes 39–41 on Jun 30; erosion control matting + seeding installed along Sharpnose Loop drainage ditch; meeting with LCC scheduled Jul 1 re: slab prep plan for next week) · Daily rollup Jul 6, 2026 (Jul 1 + Jul 2 logs ingested; base course asphalt paving final tie-ins/valve-box adjustments complete Jul 2 — scope fully closed; turn lane construction confirmed to begin Jul 7 nighttime 19:00–7:00, Bunn commenced prep; LCC slab prep for Sharpnose + Pickerel Loop scheduled Mon Jul 6, pours rescheduled to Thu Jul 9 (4 slabs, Sharpnose) and Fri Jul 10 (3 slabs, Pickerel) — supersedes the Jul 1 pour-wave target) · Daily rollup Jul 7, 2026 (Jul 6 log ingested; striping 100% complete, asphalt punch list finished; Low Country Concrete (5) fixing a Leatherback forming mistake then moving to Sharpnose slab prep; Jenkins Plumbing (3) installing in-ground plumbing to houses 3, 9 &amp; 13 Leatherback with inspections scheduled Jul 7; Precision (8) dewatering pump station; Bunn (1) prepping for the Jul 7 evening turn-lane start) &middot; Daily rollup Jul 13, 2026 (no new logs ingested — 07.07 through 07.11.docx present in Dropbox but returned "no read permission" on every conversion attempt this run, retried once after a 15s wait; treating as a transient sync gap per prior precedent, not a task failure) &middot; Daily rollup Jul 20, 2026 (no new logs ingested — gap has widened: 07.07 through 07.17.docx (10 files) now present in Dropbox, all still returning "no read permission" on every conversion attempt, retried once after a 15s wait; this now spans 13 days since 07.06, well beyond the ~6-day historical precedent — flagging for manual Dropbox sync check rather than continuing to treat as routine) &middot; Daily rollup Jul 22, 2026 (no new logs ingested — 07.07 through 07.21.docx (12 files) still present in Dropbox, all still returning "no read permission" on every conversion attempt, retried once after a 15s wait; gap has now widened to 16 days since the last successful ingest on Jul 6 — well beyond the Jul 20 flag; recommend a manual Dropbox re-sync or re-upload of this folder, as automated retries have not resolved it across three consecutive rollups) &middot; Update same day, Jul 22, 2026 (Preston made the July folder available offline shortly after the above was logged — all 12 previously-unreadable logs (07.07–07.21) became readable; 07.17, 07.20 &amp; 07.21 ingested this pass (3-log cap per rollup): framing scope now active at the clubhouse + Sharpnose Loop (14-worker crew, nail pattern inspections passed for leasing/maintenance offices), temporary metal building erection crew mobilized Jul 20, Pickerel Loop pours resumed (19 &amp; 23 poured Jul 21, 27/29/31 targeted Jul 23, 3/9/13 targeted Jul 24), all 4 Maple-home in-ground plumbing inspections passed on Leatherback, spillway at pond 1-2 complete, pump station sealing attempts continuing but not yet confirmed successful. 07.07–07.16 (9 logs) remain queued for ingestion on subsequent daily rollups per the 3-log-per-run cap) &middot; Daily rollup Jul 23, 2026 (07.22 docx converted to PDF and ingested along with 07.15 &amp; 07.16 from the queue — 3-log cap per rollup, prioritizing the newest log plus backfilling the two oldest still-queued logs: 07.15/07.16 established that clubhouse/office framing was already underway and passed nail-pattern inspection Jul 16, ahead of the previously-recorded Jul 17 start; 07.22 — framing crew started on 22 Sharpnose, temp metal building erection continuing, Low Country Concrete continuing Leatherback slab prep with 27/29/31 Pickerel still targeted Jul 23 and 3/9/13 still targeted Jul 24, Jenkins repaired a plumbing line damaged during slab prep, Precision continuing pump station sealing attempts (not yet confirmed complete), pool contractor met on site — scheduled to start Monday Jul 27. 07.07–07.14 (7 logs) remain queued for ingestion on subsequent daily rollups per the 3-log-per-run cap)</div>
+      <div class="hub-last-updated last-updated">Based on Daily Logs Apr 14–17, Apr 20–24, Apr 28–30, May 1, May 4–8, May 11–13, May 18–22, May 26–30, Jun 1–5, Jun 8–13, Jun 15–19, Jun 22–27, 2026 &amp; Weekly Summaries Apr 6–10 and Apr 13–17, 2026 · Prepared by Mark Armstrong · Augmented May 18, 2026 (mini excavator purchase closed) · Daily rollup May 29, 2026 · Daily rollup Jun 3, 2026 (May 29 + May 30 logs ingested) · Daily rollup Jun 4, 2026 (Jun 3 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Daily rollup Jun 5, 2026 (Jun 4 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Daily rollup Jun 8, 2026 (Jun 5 log ingested; Jun 1 + Jun 2 docx still not materialized in Dropbox) · Jun 8, 2026: Home slab schedule updated — 18-slab pour wave target July 1, 2026; paving caused delay; overtime forming underway · Daily rollup Jun 9, 2026 (Jun 1 + Jun 2 + Jun 8 logs ingested; all manholes complete Jun 2; all storm pipe cleaned ~Jun 7; all 4 Sharpnose pads plumbing passed Jun 8; LCC forming Pickerel Loop pads) · Daily rollup Jun 11, 2026 (Jun 9 + Jun 10 logs ingested; paving contractor mobilizing Thu Jun 12–Fri Jun 13, asphalt ops start Mon Jun 15; fine grading complete on Right Whale, crew on Sturgeon; LCC forming final 2 Pickerel pads + correcting 12 Sharpnose; Precision removing excess storm drain structures; waiting on Jenkins for Pickerel in-ground plumbing schedule) · Daily rollup Jun 12, 2026 (Jun 11 log ingested; fine grading complete on Sturgeon, crew moving to Pompano then Foxtail; Jenkins confirmed for Jun 12 Pickerel Loop plumbing; Precision cleaning pump station + 3 manholes; Webb's Landscaping awaiting bill payment before power conduit trenching can start; pump station materials delivered; paving contractor still mobilizing today/tomorrow for Mon Jun 15 asphalt start) · Daily rollup Jun 15, 2026 (Jun 12 + Jun 13 logs ingested; Jenkins completed Pickerel Loop underground plumbing Jun 12 — inspection Mon Jun 15; fine grading crew completed pump station parking lot, moving down Foxtail; paving contractor finished equipment mobilization Jun 12–13; Bunn hauling stone to Sharpnose/Pickerel + for Okatie Hwy turning lane; Precision cleaning pump station + manholes Jun 12, rained out Jun 13; asphalt paving begins today Mon Jun 15) · Daily rollup Jun 16, 2026 (Jun 15 log ingested; asphalt paving COMMENCED — AD Williams (10 workers) began paving pump station parking lot and traffic circle; Pickerel Loop plumbing inspections ALL PASSED — all pads cleared for July 1 pour wave; fine grading crew progressing down Foxtail; Jenkins installed remaining sleeves + water testing complete; Bunn (2 workers) site support; stone subgrade prep phase marked Complete) · Daily rollup Jun 18, 2026 (Jun 16 + Jun 17 logs ingested; pump station parking lot asphalt complete Jun 16 — Precision (6 workers) resumed pump station work; AD Williams advancing down Right Whale + Sturgeon rear lot; fine grading complete on Red Wolf, crew on Redhorse toward Leatherback; Jun 17: asphalt placed down Right Whale + Sturgeon end lot, rained out 16:30 at 0.5") · Daily rollup Jun 19, 2026 (Jun 18 log ingested; asphalt placed down Right Whale, crew working down Sturgeon toward Right Whale intersection; fine grading complete on Leatherback, crew on Pickerel Loop; traffic circle + Foxtail/amenities fine grading deferred to final asphalt stages; Precision pumping pump station for sealing + epoxy paint; striping begins Mon Jun 22) · Daily rollup Jun 22, 2026 (Jun 19 log ingested — rain day; 2.25" fell Thu eve Jun 18 from 17:00–20:00; all paving + fine grading ops on hold Fri Jun 19; Bunn 1 worker pumping water from roads; paving + striping resume Mon Jun 22) · Daily rollup Jun 26, 2026 (Jun 22–25 logs ingested; Jun 22: 1.25" overnight rain, AD Williams not on site, Bunn installed drainage pipe on Pickerel Loop; Jun 23: AD Williams resumed on Sturgeon, Lowes delivery; Jun 24: Sturgeon + Right Whale paved, striping COMMENCED, Dominion on site flagging power trench, form/slab prep + concrete washout ordered; Jun 25: Pompano Way storm drainage COMPLETE (Bunn), slab prep materials + formwork + flagpole delivered, paving Pompano Way + Foxtail Drive; fine grading crew on Pickerel Loop + Sharpnose Loop + adjacent Foxtail Drive; Precision continuing pump station leak repairs + dewatering) · Daily rollup Jun 29, 2026 (Jun 26 + Jun 27 logs ingested; Jun 26: fine grading touch-up on Pickerel/Sharpnose nearing completion, AD Williams paving Redhorse — all asphalt anticipated complete Wed/Thu Jul 1–2, striping crew on site, turn lane on Okatie staked out, Bunn site support; Jun 27 (Saturday): Bunn marking Pickerel/Sharpnose for Monday asphalt, striping crew continuing, NC equipment moved to farthest lot) · Daily rollup Jun 30, 2026 (Jun 29 log ingested; AD Williams (10) paving Redhorse Court + Leatherback Lane — all asphalt anticipated complete Jul 1–2; fine grading COMPLETE; Bunn (3) cleaning Sharpnose Loop drainage ditch + turn lane pre-construction meeting done, construction starts Jul 6; Precision (8) completed manholes 39–41 cleaning, epoxy coating underway) · Daily rollup Jul 1, 2026 (Jun 30 log ingested; base course asphalt paving 100% COMPLETE — all remaining asphalt finished; turn lane start updated to Jul 7 nighttime 19:00–7:00; Precision epoxy coating manholes 39–41 on Jun 30; erosion control matting + seeding installed along Sharpnose Loop drainage ditch; meeting with LCC scheduled Jul 1 re: slab prep plan for next week) · Daily rollup Jul 6, 2026 (Jul 1 + Jul 2 logs ingested; base course asphalt paving final tie-ins/valve-box adjustments complete Jul 2 — scope fully closed; turn lane construction confirmed to begin Jul 7 nighttime 19:00–7:00, Bunn commenced prep; LCC slab prep for Sharpnose + Pickerel Loop scheduled Mon Jul 6, pours rescheduled to Thu Jul 9 (4 slabs, Sharpnose) and Fri Jul 10 (3 slabs, Pickerel) — supersedes the Jul 1 pour-wave target) · Daily rollup Jul 7, 2026 (Jul 6 log ingested; striping 100% complete, asphalt punch list finished; Low Country Concrete (5) fixing a Leatherback forming mistake then moving to Sharpnose slab prep; Jenkins Plumbing (3) installing in-ground plumbing to houses 3, 9 &amp; 13 Leatherback with inspections scheduled Jul 7; Precision (8) dewatering pump station; Bunn (1) prepping for the Jul 7 evening turn-lane start) &middot; Daily rollup Jul 13, 2026 (no new logs ingested — 07.07 through 07.11.docx present in Dropbox but returned "no read permission" on every conversion attempt this run, retried once after a 15s wait; treating as a transient sync gap per prior precedent, not a task failure) &middot; Daily rollup Jul 20, 2026 (no new logs ingested — gap has widened: 07.07 through 07.17.docx (10 files) now present in Dropbox, all still returning "no read permission" on every conversion attempt, retried once after a 15s wait; this now spans 13 days since 07.06, well beyond the ~6-day historical precedent — flagging for manual Dropbox sync check rather than continuing to treat as routine) &middot; Daily rollup Jul 22, 2026 (no new logs ingested — 07.07 through 07.21.docx (12 files) still present in Dropbox, all still returning "no read permission" on every conversion attempt, retried once after a 15s wait; gap has now widened to 16 days since the last successful ingest on Jul 6 — well beyond the Jul 20 flag; recommend a manual Dropbox re-sync or re-upload of this folder, as automated retries have not resolved it across three consecutive rollups) &middot; Update same day, Jul 22, 2026 (Preston made the July folder available offline shortly after the above was logged — all 12 previously-unreadable logs (07.07–07.21) became readable; 07.17, 07.20 &amp; 07.21 ingested this pass (3-log cap per rollup): framing scope now active at the clubhouse + Sharpnose Loop (14-worker crew, nail pattern inspections passed for leasing/maintenance offices), temporary metal building erection crew mobilized Jul 20, Pickerel Loop pours resumed (19 &amp; 23 poured Jul 21, 27/29/31 targeted Jul 23, 3/9/13 targeted Jul 24), all 4 Maple-home in-ground plumbing inspections passed on Leatherback, spillway at pond 1-2 complete, pump station sealing attempts continuing but not yet confirmed successful. 07.07–07.16 (9 logs) remain queued for ingestion on subsequent daily rollups per the 3-log-per-run cap) &middot; Daily rollup Jul 23, 2026 (07.22 docx converted to PDF and ingested along with 07.15 &amp; 07.16 from the queue — 3-log cap per rollup, prioritizing the newest log plus backfilling the two oldest still-queued logs: 07.15/07.16 established that clubhouse/office framing was already underway and passed nail-pattern inspection Jul 16, ahead of the previously-recorded Jul 17 start; 07.22 — framing crew started on 22 Sharpnose, temp metal building erection continuing, Low Country Concrete continuing Leatherback slab prep with 27/29/31 Pickerel still targeted Jul 23 and 3/9/13 still targeted Jul 24, Jenkins repaired a plumbing line damaged during slab prep, Precision continuing pump station sealing attempts (not yet confirmed complete), pool contractor met on site — scheduled to start Monday Jul 27. 07.07–07.14 (7 logs) remain queued for ingestion on subsequent daily rollups per the 3-log-per-run cap) &middot; Daily rollup Jul 24, 2026 (07.23 log ingested — Low Country Concrete (4 workers) poured 2 more slabs on Pickerel Loop, exact addresses not specified, 2 more planned Jul 24; framing crew (14 workers, Lull) continuing at clubhouse, 16, 22 &amp; 12 Sharpnose Loop (12 Sharpnose newly added), 16 Sharpnose Loop nail pattern inspection PASSED; Precision (5 workers) continued pump station sealing attempts + manhole adjustments, not yet confirmed complete; temp metal building crew workforce table shows 0 workers today despite narrative separately referencing a crew mobilizing (likely carried over from Jul 20) — scissor lift delivered to site; meetings held with BJWSA and Dominion, outcomes not detailed in the log; met with pool contractor, reconfirmed Monday Jul 27 start; no issues/delays reported)</div>
     </div>
 
     <!-- TEAM Q&A -->
@@ -2129,7 +2195,7 @@
               <span class="hub-badge blue">In Progress</span>
             </div>
             <div class="hub-issue-body">
-              <p>Webb's Landscaping had rolled back all water laterals in preparation for the trenching of power conduit. Per the Jun 11 and Jun 12 daily logs, the crew could not start laying conduit until an outstanding bill was paid. <strong>Jun 24 update: A Dominion Energy worker was on site flagging the trench path for power — this indicates the payment blocker was cleared and the utility sequence is advancing. Dominion must flag/design the trench route before Webb's can dig.</strong></p>
+              <p>Webb's Landscaping had rolled back all water laterals in preparation for the trenching of power conduit. Per the Jun 11 and Jun 12 daily logs, the crew could not start laying conduit until an outstanding bill was paid. <strong>Jun 24 update: A Dominion Energy worker was on site flagging the trench path for power — this indicates the payment blocker was cleared and the utility sequence is advancing. Dominion must flag/design the trench route before Webb's can dig.</strong> <strong>Jul 23: A meeting was held today with Dominion (per the daily log); outcome/details not specified in the log.</strong></p>
               <div class="hub-issue-meta">
                 <span><strong>Owner:</strong> Preston / Andrew Woods</span>
                 <span><strong>Raised:</strong> June 11, 2026 · <strong>Progress: Jun 24, 2026</strong> — Dominion on site flagging power trench path</span>
@@ -2164,6 +2230,46 @@
   <!-- ══ RIGHT COLUMN ═════════════════════════════════════════ -->
   <div class="hub-col-right">
 
+    <!-- PROJECT AT A GLANCE -->
+    <div class="hub-card">
+      <div class="hub-card-header">
+        <h2>📌 Project at a Glance</h2>
+        <span class="hub-badge green">Vertical Underway</span>
+      </div>
+      <div class="hub-card-body">
+        <div class="hub-task-list">
+          <div class="hub-task-item">
+            <div class="task-check checked"></div>
+            <div class="task-text">
+              <strong>270 homes</strong>
+              <div class="task-owner">Total community size · 64.44 acres</div>
+            </div>
+          </div>
+          <div class="hub-task-item">
+            <div class="task-check checked"></div>
+            <div class="task-text">
+              <strong>$3.375M land</strong>
+              <div class="task-owner">Real estate closing per Team Notepad · 5/1/2024</div>
+            </div>
+          </div>
+          <div class="hub-task-item">
+            <div class="task-check checked"></div>
+            <div class="task-text">
+              <strong>Vertical start: June 2026</strong>
+              <div class="task-owner">Site work began Jan 2025 · expected complete July 2026</div>
+            </div>
+          </div>
+          <div class="hub-task-item">
+            <div class="task-check checked"></div>
+            <div class="task-text">
+              <strong>First unit turnover: October 2026</strong>
+              <div class="task-owner">Per Team Notepad · project completion targeted May 2028 · 270 homes total</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- TEAM TASKS & OWNERSHIP -->
     <div class="hub-card">
       <div class="hub-card-header">
@@ -2178,7 +2284,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Frame clubhouse &amp; Sharpnose Loop houses
-              <div class="task-owner">Framing crew · 14 workers (Lull), underway by mid-July. <strong>Jul 15: Progressing on clubhouse; leasing &amp; maintenance offices nearing completion of framing, nail pattern inspection scheduled Jul 16.</strong> <strong>Jul 16: Leasing &amp; maintenance offices PASSED nail pattern inspections.</strong> <strong>Jul 17: Progressing on clubhouse — crane on site hanging trusses; crews now also framing houses on Sharpnose Loop. Truss packages arrived for 12 &amp; 16 Sharpnose.</strong> <strong>Jul 20: Continuing at clubhouse + 16 Sharpnose Loop, worked through the weekend; trusses for 22 Sharpnose arrived.</strong> <strong>Jul 21: Continuing at clubhouse + 16 Sharpnose Loop.</strong> <strong>Jul 22: Continuing at clubhouse + 16 Sharpnose Loop; crew started framing 22 Sharpnose. Nail pattern inspection scheduled tomorrow on 16 Sharpnose.</strong></div>
+              <div class="task-owner">Framing crew · 14 workers (Lull), underway by mid-July. <strong>Jul 15: Progressing on clubhouse; leasing &amp; maintenance offices nearing completion of framing, nail pattern inspection scheduled Jul 16.</strong> <strong>Jul 16: Leasing &amp; maintenance offices PASSED nail pattern inspections.</strong> <strong>Jul 17: Progressing on clubhouse — crane on site hanging trusses; crews now also framing houses on Sharpnose Loop. Truss packages arrived for 12 &amp; 16 Sharpnose.</strong> <strong>Jul 20: Continuing at clubhouse + 16 Sharpnose Loop, worked through the weekend; trusses for 22 Sharpnose arrived.</strong> <strong>Jul 21: Continuing at clubhouse + 16 Sharpnose Loop.</strong> <strong>Jul 22: Continuing at clubhouse + 16 Sharpnose Loop; crew started framing 22 Sharpnose. Nail pattern inspection scheduled tomorrow on 16 Sharpnose.</strong> <strong>Jul 23: Continuing at clubhouse, 16, 22 &amp; 12 Sharpnose Loop (now also framing 12 Sharpnose Loop). 16 Sharpnose Loop nail pattern inspection PASSED. Framing materials delivered for the clubhouse.</strong></div>
             </div>
             <span class="hub-badge yellow">Active</span>
           </div>
@@ -2186,7 +2292,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Erect temporary metal building
-              <div class="task-owner">Dedicated crew · <strong>Jul 20: 5 workers mobilized to begin construction at the rear of the site.</strong> <strong>Jul 21: Continuing erection.</strong> <strong>Jul 22: 4 workers continuing erection.</strong></div>
+              <div class="task-owner">Dedicated crew · <strong>Jul 20: 5 workers mobilized to begin construction at the rear of the site.</strong> <strong>Jul 21: Continuing erection.</strong> <strong>Jul 22: 4 workers continuing erection.</strong> <strong>Jul 23: Workforce table shows 0 workers for this crew today — no confirmed erection work; narrative separately references a crew mobilizing, which appears to be carried over from the Jul 20 entry. Scissor lift delivered to site for the crew's use.</strong></div>
             </div>
             <span class="hub-badge yellow">Active</span>
           </div>
@@ -2194,7 +2300,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Attempt to seal pump station
-              <div class="task-owner">Precision · 2 workers. <strong>Jul 17: Installed dewatering wells adjacent to the pump station to mitigate groundwater infiltration; plan to attempt sealing Monday.</strong> <strong>Jul 20: Preparing to seal — sealing ops scheduled 18:30, coinciding with low tide.</strong> <strong>Jul 21: Called in a vac truck to pump water out; continuing to try to seal the base of the station — not yet confirmed complete.</strong> <strong>Jul 22: Precision (5 workers, water pumps) called in a vac truck again to pump water out of the pump station and continue sealing attempts; a second Precision crew reported adjusting manholes. Sealing still not confirmed complete.</strong></div>
+              <div class="task-owner">Precision · 2 workers. <strong>Jul 17: Installed dewatering wells adjacent to the pump station to mitigate groundwater infiltration; plan to attempt sealing Monday.</strong> <strong>Jul 20: Preparing to seal — sealing ops scheduled 18:30, coinciding with low tide.</strong> <strong>Jul 21: Called in a vac truck to pump water out; continuing to try to seal the base of the station — not yet confirmed complete.</strong> <strong>Jul 22: Precision (5 workers, water pumps) called in a vac truck again to pump water out of the pump station and continue sealing attempts; a second Precision crew reported adjusting manholes. Sealing still not confirmed complete.</strong> <strong>Jul 23: Precision (5 workers, water pumps) called in a vac truck again to pump water out of the pump station and continue trying to seal the base; a second Precision crew continued adjusting manholes. Sealing still not confirmed complete. Meetings held today with BJWSA and Dominion — outcomes not detailed in the log.</strong></div>
             </div>
             <span class="hub-badge yellow">Active</span>
           </div>
@@ -3013,7 +3119,7 @@
     <div style="text-align:right;font-size:12px;opacity:0.80;line-height:1.7;">
       <strong style="display:block;font-size:14px;opacity:1;color:#a8cce8;">Next Chapter Neighborhoods</strong>
       Owner: Shane Malek · Report Prepared By: Dan Evans<br/>
-      Last Updated: July 16, 2026
+      Last Updated: July 23, 2026
     </div>
   </div>
 
@@ -3027,11 +3133,11 @@
     <div class="lbl">Watch Item</div>
   </div>
   <div class="hub-stat">
-    <div class="val">38</div>
+    <div class="val">39</div>
     <div class="lbl">Days Lost to Weather</div>
   </div>
   <div class="hub-stat">
-    <div class="val">SS Line 12 Complete; Storm Line 24 In</div>
+    <div class="val">SS Lines 12, 13, 15, 18 &amp; 14 Complete</div>
     <div class="lbl">Progress This Week</div>
   </div>
   <div class="hub-stat">
@@ -3039,7 +3145,7 @@
     <div class="lbl">Open Items</div>
   </div>
   <div class="hub-stat">
-    <div class="val">July 16</div>
+    <div class="val">July 23</div>
     <div class="lbl">Last Site Report</div>
   </div>
 </div>
@@ -3169,7 +3275,7 @@
           <div class="hub-phase-item">
             <div>
               <div class="phase-name">Private Storm Sewer — Lines 21–24, 29, 31</div>
-              <div class="phase-detail"><strong>Jun 5: Starting Private Storm line 21 at N. Mayfield Ave — new scope opened per June 5 weekly progress report. Continue private storm sewer construction south of NW 90th St in look-ahead.</strong> <strong>Jun 11: Continue private storm sewer construction south of NW 90th St still in look-ahead; no progress update this week due to weather.</strong> <strong>Jun 18: Private storm sewer progressing south of NW 90th St — Line 21 COMPLETE; Line 22 COMPLETE; Line 23 complete through structure 23-7; Line 31 complete through structure 31-5; Line 29 complete through structure 29-4. Look-ahead: continue private storm sewer construction south of NW 90th St.</strong> <strong>Jun 25: Private storm sewer underway — 6 boxes shy of completing private storm on south side of NW 90th St. Look-ahead: place additional erosion control BMPs; continue private storm sewer and mass grading as spoils become available; complete private storm sewer south of NW 90th St as missing structures become available.</strong> <strong>Jul 2: Missing structures for the south side of NW 90th St have been delivered to site — clears the blocker that had left the scope 6 boxes shy of completion. Look-ahead: complete private storm sewer construction south of NW 90th St as missing structures become available.</strong> <strong>Jul 16: Private Storm Line 24 INSTALLED — new scope added to this line group. Lines 24 → 29 now waiting on delivery of additional structures before they can continue.</strong></div>
+              <div class="phase-detail"><strong>Jun 5: Starting Private Storm line 21 at N. Mayfield Ave — new scope opened per June 5 weekly progress report. Continue private storm sewer construction south of NW 90th St in look-ahead.</strong> <strong>Jun 11: Continue private storm sewer construction south of NW 90th St still in look-ahead; no progress update this week due to weather.</strong> <strong>Jun 18: Private storm sewer progressing south of NW 90th St — Line 21 COMPLETE; Line 22 COMPLETE; Line 23 complete through structure 23-7; Line 31 complete through structure 31-5; Line 29 complete through structure 29-4. Look-ahead: continue private storm sewer construction south of NW 90th St.</strong> <strong>Jun 25: Private storm sewer underway — 6 boxes shy of completing private storm on south side of NW 90th St. Look-ahead: place additional erosion control BMPs; continue private storm sewer and mass grading as spoils become available; complete private storm sewer south of NW 90th St as missing structures become available.</strong> <strong>Jul 2: Missing structures for the south side of NW 90th St have been delivered to site — clears the blocker that had left the scope 6 boxes shy of completion. Look-ahead: complete private storm sewer construction south of NW 90th St as missing structures become available.</strong> <strong>Jul 16: Private Storm Line 24 INSTALLED — new scope added to this line group. Lines 24 → 29 now waiting on delivery of additional structures before they can continue.</strong> <strong>Jul 23: Missing storm structures for private storm sewer south of NW 90th St have arrived on site — clears the delivery blocker for Lines 24 → 29. Look-ahead: complete private storm sewer construction south of NW 90th St.</strong></div>
               <div class="hub-progress-wrap"><div class="hub-progress-fill teal" style="width:78%"></div></div>
             </div>
             <span class="hub-badge amber">In Progress</span>
@@ -3497,9 +3603,27 @@
             <div class="ms-note">July 16 weekly report: 1 additional weather day lost this week (37 through Jul 9 + 1 this week = 38 cumulative).</div>
           </div>
 
+          <div class="hub-milestone done">
+            <div class="ms-label">Private Sanitary Lines 12, 13, 15 &amp; 18 COMPLETE; Line 14 (Structures 14-1→14-4) COMPLETE</div>
+            <div class="ms-date">Week of July 20, 2026</div>
+            <div class="ms-note">Per July 23 weekly report — Lines 12, 13, 15, and 18 all complete; Line 14 complete from structure 14-1 through 14-4. All services run.</div>
+          </div>
+
+          <div class="hub-milestone active">
+            <div class="ms-label">1 Additional Weather Day Lost — Week of July 20 (39 Cumulative)</div>
+            <div class="ms-date">Week of July 20, 2026</div>
+            <div class="ms-note">July 23 weekly report: 1 additional weather day lost this week, bringing cumulative total to 39 days lost from weather events.</div>
+          </div>
+
+          <div class="hub-milestone done">
+            <div class="ms-label">Drone Flight — July 23, 2026</div>
+            <div class="ms-date">July 23, 2026</div>
+            <div class="ms-note">Latest aerial site footage: <a href="https://youtu.be/XChm9fbI0VQ" target="_blank">https://youtu.be/XChm9fbI0VQ</a></div>
+          </div>
+
         </div>
       </div>
-      <div class="hub-last-updated last-updated">Based on Weekly Progress Updates Apr 1 · Apr 8 · Apr 16 · Apr 23 · Apr 30 · May 14 · May 21 · May 28 · Jun 5 · Jun 11 · Jun 18 · Jun 25 · Jul 2 · Jul 9, 2026 · Prepared by Dan Evans · Augmented with Team Notepad May 18, 2026 · Daily rollup May 29, 2026 · Daily rollup Jun 3, 2026 (no new weekly progress update for week ending May 30 / Jun 1; next due ~Jun 4) · Daily rollup Jun 8, 2026 (Jun 5 weekly progress update ingested — Lines 7, 8, D, B all complete; NW 90th roadway work beginning) · Daily rollup Jun 12, 2026 (Jun 11 weekly progress update ingested — no progress this week due to continuous severe weather; 3 more days lost, 31 cumulative; NW 90th cement stabilization 6/16 + curb 6/23 still on schedule; drone flight Jun 9 recorded) · Daily rollup Jun 15, 2026 (no new weekly progress update since Jun 11; notepad checked — Open Questions already reflected: finalize streetlight layout for Evergy conduit design, conduit install must begin July 2026) · Daily rollup Jun 19, 2026 (Jun 18 weekly progress update ingested — Lines 21 &amp; 22 complete, Lines 23/29/31 in progress; NW 90th survey/layout complete, stringline set, approaches prepped, roadway cut to grade; 2 more weather days lost, 34 cumulative; 4 new critical delay items: ADA ramp redesign, gas line lowering, AT&amp;T telecom, KC Water contract; drone flight Jun 16 recorded) · Daily rollup Jun 29, 2026 (Jun 25 weekly progress update ingested — private storm sewer 6 boxes shy of completion south NW 90th; private sanitary begun north side NW 90th; 0 weather days lost this week, 36 cumulative; NW 90th stabilization rescheduled to July 7; drone flight Jun 23 recorded; critical blockers unchanged) · Daily rollup Jul 1, 2026 (Bluestem: no new weekly progress report this period; Wellner Architects plan submission to Lee's Summit + Blue Springs cities already captured in open issues; Neighbors repricing status unchanged) · Daily rollup Jul 6, 2026 (Jul 2 weekly progress update ingested — Private SS Lines 10 &amp; 11 complete north side NW 90th; missing storm structures for south side delivered; survey/layout complete for revised raised intersection grades + gas main lowered at east approach, resolving 2 of 4 critical blockers; AT&amp;T telecom + KC Water contract items also marked resolved in report though KC Water payment bond/contract docs still finalizing (ETA 7/6); 0 weather days lost, still 36 cumulative; no new drone flight; prior daily rollup's "hub.html source file found truncated mid-document" note was a bash-mount sync artifact on this machine, not real file corruption — Jul 2 weekly-report embed refreshed via direct source read) · Daily rollup Jul 13, 2026 (Jul 9 weekly progress update ingested — Private SS Lines 13 &amp; 3 (structures 3-1→3-2) complete north side NW 90th, all services run; KC Water contract docs submitted to Kirk Rome 7/8; 1 additional weather day lost, 37 cumulative; AT&amp;T north-approach telecom line reopened — Jul 2's "resolved" status was premature, now scheduled to be lowered week of Jul 13; new open items: Olsson owner's contract needed for water as-builts (Shane coordinating), and new preliminary sanitary plans received with changes to already-installed services requiring review; drone flight Jul 7 recorded) · Daily rollup Jul 16, 2026 (Jul 16 weekly progress update ingested — Private SS Line 3 extended, structures 3-3→4-1 complete, all services run; new Private SS Line 12 (10-2→12-1) complete, all services run, segment 12-1→12-2 in progress; Private Storm Sewer Line 24 installed, Lines 24→29 awaiting structures; 1 additional weather day lost, cumulative now 38 (37 through Jul 9 + 1 this week); AT&amp;T north-approach telecom line still not lowered, target slipped again to week of Jul 20; no update on NW 90th roadway/curb/stabilization status this week; report prepared by Trevor Zarybnicky (Superior Bowen) rather than Dan Evans; no new drone flight) &middot; Daily rollup Jul 20, 2026 (no new weekly progress update since Jul 16; next due ~Jul 23) &middot; Daily rollup Jul 23, 2026 (no new weekly progress update since Jul 16; the report due ~Jul 23 has not yet been received — only 2026.07.02, 2026.07.09 and 2026.07.16 present in the Jul.26 progress-reports folder, all already ingested)</div>
+      <div class="hub-last-updated last-updated">Based on Weekly Progress Updates Apr 1 · Apr 8 · Apr 16 · Apr 23 · Apr 30 · May 14 · May 21 · May 28 · Jun 5 · Jun 11 · Jun 18 · Jun 25 · Jul 2 · Jul 9, 2026 · Prepared by Dan Evans · Augmented with Team Notepad May 18, 2026 · Daily rollup May 29, 2026 · Daily rollup Jun 3, 2026 (no new weekly progress update for week ending May 30 / Jun 1; next due ~Jun 4) · Daily rollup Jun 8, 2026 (Jun 5 weekly progress update ingested — Lines 7, 8, D, B all complete; NW 90th roadway work beginning) · Daily rollup Jun 12, 2026 (Jun 11 weekly progress update ingested — no progress this week due to continuous severe weather; 3 more days lost, 31 cumulative; NW 90th cement stabilization 6/16 + curb 6/23 still on schedule; drone flight Jun 9 recorded) · Daily rollup Jun 15, 2026 (no new weekly progress update since Jun 11; notepad checked — Open Questions already reflected: finalize streetlight layout for Evergy conduit design, conduit install must begin July 2026) · Daily rollup Jun 19, 2026 (Jun 18 weekly progress update ingested — Lines 21 &amp; 22 complete, Lines 23/29/31 in progress; NW 90th survey/layout complete, stringline set, approaches prepped, roadway cut to grade; 2 more weather days lost, 34 cumulative; 4 new critical delay items: ADA ramp redesign, gas line lowering, AT&amp;T telecom, KC Water contract; drone flight Jun 16 recorded) · Daily rollup Jun 29, 2026 (Jun 25 weekly progress update ingested — private storm sewer 6 boxes shy of completion south NW 90th; private sanitary begun north side NW 90th; 0 weather days lost this week, 36 cumulative; NW 90th stabilization rescheduled to July 7; drone flight Jun 23 recorded; critical blockers unchanged) · Daily rollup Jul 1, 2026 (Bluestem: no new weekly progress report this period; Wellner Architects plan submission to Lee's Summit + Blue Springs cities already captured in open issues; Neighbors repricing status unchanged) · Daily rollup Jul 6, 2026 (Jul 2 weekly progress update ingested — Private SS Lines 10 &amp; 11 complete north side NW 90th; missing storm structures for south side delivered; survey/layout complete for revised raised intersection grades + gas main lowered at east approach, resolving 2 of 4 critical blockers; AT&amp;T telecom + KC Water contract items also marked resolved in report though KC Water payment bond/contract docs still finalizing (ETA 7/6); 0 weather days lost, still 36 cumulative; no new drone flight; prior daily rollup's "hub.html source file found truncated mid-document" note was a bash-mount sync artifact on this machine, not real file corruption — Jul 2 weekly-report embed refreshed via direct source read) · Daily rollup Jul 13, 2026 (Jul 9 weekly progress update ingested — Private SS Lines 13 &amp; 3 (structures 3-1→3-2) complete north side NW 90th, all services run; KC Water contract docs submitted to Kirk Rome 7/8; 1 additional weather day lost, 37 cumulative; AT&amp;T north-approach telecom line reopened — Jul 2's "resolved" status was premature, now scheduled to be lowered week of Jul 13; new open items: Olsson owner's contract needed for water as-builts (Shane coordinating), and new preliminary sanitary plans received with changes to already-installed services requiring review; drone flight Jul 7 recorded) · Daily rollup Jul 16, 2026 (Jul 16 weekly progress update ingested — Private SS Line 3 extended, structures 3-3→4-1 complete, all services run; new Private SS Line 12 (10-2→12-1) complete, all services run, segment 12-1→12-2 in progress; Private Storm Sewer Line 24 installed, Lines 24→29 awaiting structures; 1 additional weather day lost, cumulative now 38 (37 through Jul 9 + 1 this week); AT&amp;T north-approach telecom line still not lowered, target slipped again to week of Jul 20; no update on NW 90th roadway/curb/stabilization status this week; report prepared by Trevor Zarybnicky (Superior Bowen) rather than Dan Evans; no new drone flight) &middot; Daily rollup Jul 20, 2026 (no new weekly progress update since Jul 16; next due ~Jul 23) &middot; Daily rollup Jul 23, 2026 (no new weekly progress update since Jul 16; the report due ~Jul 23 has not yet been received — only 2026.07.02, 2026.07.09 and 2026.07.16 present in the Jul.26 progress-reports folder, all already ingested) &middot; Daily rollup Jul 24, 2026 (Jul 23 weekly progress update ingested — Private Sanitary Lines 12, 13, 15 &amp; 18 all complete, all services run; Private Sanitary Line 14 (structures 14-1→14-4) complete, all services run; rip-rap placed at detention basin outfall structures; missing private storm structures for south side of NW 90th St have arrived, clearing the delivery blocker for Lines 24→29; erosion control BMPs repaired; spoils continuing to be placed in fill locations as available; 1 additional weather day lost, cumulative now 39; report does not address AT&amp;T telecom, KC Water contract, ADA ramp, or gas line items this week — all left as previously reported; NW 90th roadway/curb/stabilization status remains unconfirmed for a third straight report; drone flight Jul 23 recorded (https://youtu.be/XChm9fbI0VQ); report prepared by Dan Evans)</div>
     </div>
 
     <!-- OPEN ISSUES & CHALLENGES -->
@@ -3731,7 +3855,7 @@
     <div class="hub-card">
       <div class="hub-card-header">
         <h2>✅ Team Tasks</h2>
-        <span class="hub-badge amber">Week of July 16</span>
+        <span class="hub-badge amber">Week of July 23</span>
       </div>
       <div class="hub-card-body">
 
@@ -3741,7 +3865,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Continue NW 90th St roadway construction — Jul 7 cement stabilization target (unconfirmed)
-              <div class="task-owner">Site Crew / Dan Evans · Jun 18: survey/layout complete, stringline set, approaches prepped, roadway cut to grade. <strong>Jul 2: Revised raised-intersection survey/layout complete, stringline set; gas main lowered at east approach; roadway continuing to be cut to grade. ADA ramp, gas line, AT&amp;T, and KC Water blockers all marked resolved this week — Jul 7 stabilization target on track, with water-permit payment bond ETA Jul 6.</strong> <strong>Jul 9: Report does not confirm whether stabilization occurred; AT&amp;T north-approach line reopened, scheduled to be lowered week of Jul 13.</strong> <strong>Jul 16: Report is silent on roadway/curb/stabilization again — status still unconfirmed for two straight weeks.</strong></div>
+              <div class="task-owner">Site Crew / Dan Evans · Jun 18: survey/layout complete, stringline set, approaches prepped, roadway cut to grade. <strong>Jul 2: Revised raised-intersection survey/layout complete, stringline set; gas main lowered at east approach; roadway continuing to be cut to grade. ADA ramp, gas line, AT&amp;T, and KC Water blockers all marked resolved this week — Jul 7 stabilization target on track, with water-permit payment bond ETA Jul 6.</strong> <strong>Jul 9: Report does not confirm whether stabilization occurred; AT&amp;T north-approach line reopened, scheduled to be lowered week of Jul 13.</strong> <strong>Jul 16: Report is silent on roadway/curb/stabilization again — status still unconfirmed for two straight weeks.</strong> <strong>Jul 23: Report is silent on roadway/curb/stabilization for a third straight week.</strong></div>
             </div>
             <span class="hub-badge amber">Active</span>
           </div>
@@ -3749,7 +3873,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Complete private storm sewer construction south of NW 90th St
-              <div class="task-owner">Utility Crew · Jun 25: 6 boxes shy of completion. <strong>Jul 2: Missing structures delivered to site — completion now unblocked.</strong> Jul 9 report does not mention this scope — status update pending next report. <strong>Jul 16: Line 24 installed; Lines 24 → 29 now waiting on delivery of additional structures.</strong></div>
+              <div class="task-owner">Utility Crew · Jun 25: 6 boxes shy of completion. <strong>Jul 2: Missing structures delivered to site — completion now unblocked.</strong> Jul 9 report does not mention this scope — status update pending next report. <strong>Jul 16: Line 24 installed; Lines 24 → 29 now waiting on delivery of additional structures.</strong> <strong>Jul 23: Missing storm structures have now arrived on site — delivery blocker for Lines 24 → 29 cleared.</strong></div>
             </div>
             <span class="hub-badge amber">Active</span>
           </div>
@@ -3757,7 +3881,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Continue private sanitary sewer construction north of NW 90th St
-              <div class="task-owner">Utility Crew · Jun 25: private sanitary sewer construction begun on north side. <strong>Jul 2: Private SS Lines 10 &amp; 11 complete on north side, all services run.</strong> <strong>Jul 9: Private SS Line 13 complete (north side); Private SS Line 3 (structures 3-1→3-2) complete — all services run.</strong> <strong>Jul 16: Private SS Line 3 extended (3-3→4-1) complete, all services run; new Private SS Line 12 (10-2→12-1) complete, all services run — segment 12-1→12-2 now in progress.</strong></div>
+              <div class="task-owner">Utility Crew · Jun 25: private sanitary sewer construction begun on north side. <strong>Jul 2: Private SS Lines 10 &amp; 11 complete on north side, all services run.</strong> <strong>Jul 9: Private SS Line 13 complete (north side); Private SS Line 3 (structures 3-1→3-2) complete — all services run.</strong> <strong>Jul 16: Private SS Line 3 extended (3-3→4-1) complete, all services run; new Private SS Line 12 (10-2→12-1) complete, all services run — segment 12-1→12-2 now in progress.</strong> <strong>Jul 23: Private SS Lines 12, 13, 15 &amp; 18 all complete, all services run; Private SS Line 14 (structures 14-1→14-4) complete, all services run.</strong></div>
             </div>
             <span class="hub-badge amber">Active</span>
           </div>
@@ -3773,7 +3897,7 @@
             <div class="task-check"></div>
             <div class="task-text">
               Place additional erosion control BMPs as required
-              <div class="task-owner">Site Crew · Ongoing</div>
+              <div class="task-owner">Site Crew · Ongoing. <strong>Jul 23: Erosion control BMPs repaired this week; look-ahead continues to call for additional BMPs as required.</strong></div>
             </div>
             <span class="hub-badge amber">Active</span>
           </div>
@@ -3809,6 +3933,11 @@
 
         <div class="hub-section-label">Recently Completed</div>
         <div class="hub-task-list">
+          <div class="hub-task-item done">
+            <div class="task-check checked"></div>
+            <div class="task-text">Private SS Lines 12, 13, 15 &amp; 18 all COMPLETE, all services run. Private SS Line 14 (structures 14-1→14-4) COMPLETE, all services run. Rip-rap placed at detention basin outfall structures; missing private storm structures for south side of NW 90th St have arrived. Erosion control BMPs repaired. 1 additional weather day lost (39 cumulative). Drone flight captured Jul 23. Report prepared by Dan Evans.</div>
+            <span class="hub-badge blue">Wk of Jul 20 · Reported Jul 23</span>
+          </div>
           <div class="hub-task-item done">
             <div class="task-check checked"></div>
             <div class="task-text">Private SS Line 3 extended (structures 3-3→4-1) COMPLETE, all services run. New Private SS Line 12 (10-2→12-1) COMPLETE, all services run — segment 12-1→12-2 in progress. Private Storm Sewer Line 24 installed; Lines 24→29 awaiting structures. 1 additional weather day lost (38 cumulative). Report prepared by Trevor Zarybnicky (Superior Bowen).</div>
@@ -4426,7 +4555,7 @@
 </div><!-- /#edmond-section -->
 
 <div class="page-footer">
-  Next Chapter Neighborhoods &middot; Portfolio Hub &middot; Updated July 23, 2026 &middot; Daily rollup
+  Next Chapter Neighborhoods &middot; Portfolio Hub &middot; Updated July 24, 2026 &middot; Daily rollup
 </div>
 
 </body>
